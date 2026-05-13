@@ -13,5 +13,4 @@ class GoogleDataDownloader:
     def download(self, file_url: str):
         if not self.file_path.is_file():
             gdown.download(url=file_url,
-                           output=str(self.file_path),
-                           fuzzy=True)
+                           output=str(self.file_path))
